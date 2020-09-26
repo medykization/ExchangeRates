@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222525"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="5sp"
+        android:paddingEnd="0sp"
+        android:text="Kurs Walut"
+        android:textColor="#BECAD8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/more"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/helper"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="5sp"
+            android:paddingEnd="0sp"
+            android:text="Data notowania: "
+            android:textColor="#BECAD8" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#374732"
+            android:paddingStart="0sp"
+            android:paddingEnd="5sp"
+            android:textAlignment="viewEnd"
+            android:textColor="#BECAD8" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/helper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="0sp"
+        android:paddingEnd="45sp"
+        android:text="PLN"
+        android:textAlignment="viewEnd"
+        android:textColor="#BECAD8"
+        app:layout_constraintBottom_toTopOf="@id/exchange_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/more" />
+
+    <ListView
+        android:id="@+id/exchange_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helper" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

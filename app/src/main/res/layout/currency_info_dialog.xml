@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300sp"
+    android:layout_height="300sp"
+    android:background="#191616"
+    android:minWidth="300sp"
+    android:minHeight="200sp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp">
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_weight="1"
+            android:text="test"
+            android:textAlignment="center"
+            android:textColor="#BECAD8"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp">
+
+        <TextView
+            android:id="@+id/currency_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="test"
+            android:textAlignment="center"
+            android:textColor="#BECAD8"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp">
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kurs kupna"
+            android:textColor="#BECAD8"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/buy_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="test"
+            android:textAlignment="viewEnd"
+            android:textColor="#BECAD8"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp">
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kurs sprzedaży"
+            android:textColor="#BECAD8"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sell_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="test"
+            android:textAlignment="viewEnd"
+            android:textColor="#BECAD8"
+            android:textSize="20sp" />
+    </TableRow>
+
+</TableLayout>
